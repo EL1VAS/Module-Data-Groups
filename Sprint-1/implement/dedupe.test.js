@@ -36,3 +36,9 @@ test("given an array with no duplicates, it returns a copy of the original array
 // Given an array with strings or numbers
 // When passed to the dedupe function
 // Then it should remove the duplicate values, preserving the first occurence of each element
+test("given an array with strings or numbers, it removes the duplicate values, preserving the first occurence of each element", () => {
+    const list = [1, 2, 1, a, 4, a, 4, b, 2];
+    const currentOutput = dedupe(list);
+    const targetOutput = [1, 2, a, 4, b];
+    expect(currentOutput).toEqual(targetOutput);
+});
