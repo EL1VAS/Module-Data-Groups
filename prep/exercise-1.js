@@ -1,5 +1,5 @@
 // Can you fix this code?
-function doubleAllNumbers() {
+function doubleAllNumbers(numbers) {
     let doubledNumbers = [];
 
     for (let n of numbers) {
