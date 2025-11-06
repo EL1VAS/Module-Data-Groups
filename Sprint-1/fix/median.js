@@ -5,9 +5,7 @@
 // Hint: Please consider scenarios when 'list' doesn't have numbers (the function is expected to return null)
 // or 'list' has mixed values (the function is expected to sort only numbers).
 
-function calculateMedian(list) {
-    const sorted = [...list].sort((a, b) => a - b); //Sorted the list ascending
-    const middleIndex = Math.floor(sorted.length / 2); //Find the middle index by dividing the length of sorted list in 2
+function isNumbers(list) {
     for (let i = 0; i < list.length; i++) {
         //Created a loop to check all list's indexes to find a number
         if (typeof list(i) === "number") {
@@ -15,6 +13,11 @@ function calculateMedian(list) {
         }
     }
     return null; //If loop finished and there is no number
+}
+
+function calculateMedian(list) {
+    const sorted = [...list].sort((a, b) => a - b); //Sorted the list ascending
+    const middleIndex = Math.floor(sorted.length / 2); //Find the middle index by dividing the length of sorted list in 2
 
     if (sorted.length % 2 === 0) {
         // If length of list is even
@@ -24,4 +27,4 @@ function calculateMedian(list) {
     return median;
 }
 
-module.exports = calculateMedian;
+module.exports = { isNumbers, calculateMedian };
