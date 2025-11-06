@@ -6,11 +6,12 @@
 // or 'list' has mixed values (the function is expected to sort only numbers).
 
 function calculateMedian(list) {
-    const middleIndex = Math.floor(list.length / 2);
-    if (list.length % 2 === 0) {
-        return (list[middleIndex - 1] + list[middleIndex]) / 2;
+    const sorted = [...list];
+    const middleIndex = Math.floor(sorted.length / 2);
+    if (sorted.length % 2 === 0) {
+        return (sorted[middleIndex - 1] + sorted[middleIndex]) / 2;
     }
-    const median = list.splice(middleIndex, 1)[0];
+    const median = sorted.splice(middleIndex, 1)[0];
     return median;
 }
 
