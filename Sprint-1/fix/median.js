@@ -26,7 +26,7 @@ function calculateMedian(list) {
         return (sorted[middleIndex - 1] + sorted[middleIndex]) / 2; //Find the mean of the two digits in the middle
     }
 
-    return median;
+    return sorted[middleIndex];
 }
 
 module.exports = calculateMedian;
