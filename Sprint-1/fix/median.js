@@ -8,7 +8,7 @@
 function isNumbers(list) {
     for (let i = 0; i < list.length; i++) {
         //Created a loop to check all list's indexes to find a number
-        if (typeof list(i) === "number") {
+        if (typeof list[i] === "number") {
             return false;
         }
     }
