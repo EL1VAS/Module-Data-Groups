@@ -1,6 +1,6 @@
 // Can you fix this code?
 function doubleAllNumbers() {
-    let doubledNumbers;
+    let doubledNumbers = [];
 
     for (let n of numbers) {
         doubledNumbers.push(n * 2);
