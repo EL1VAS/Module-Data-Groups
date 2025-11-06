@@ -3,3 +3,5 @@ function dedupe(list) {
         return [];
     }
 }
+
+module.export = dedupe;
