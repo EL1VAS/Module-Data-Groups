@@ -4,4 +4,4 @@ function dedupe(list) {
     }
 }
 
-module.export = dedupe;
+module.exports = dedupe;
