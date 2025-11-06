@@ -13,7 +13,10 @@ function calculateMedian(list) {
             numbers.push(list[i]); //It adds the number found to the numbers array
         }
     }
-    return null; //If loop finished and there is no number
+
+    if (numbers.length === 0) {
+        return null; //If loop finished and there is no number
+    }
 
     const sorted = [...numbers].sort((a, b) => a - b); //Sorted the list of numbers ascending
     const middleIndex = Math.floor(sorted.length / 2); //Find the middle index by dividing the length of sorted number list in 2
@@ -22,7 +25,7 @@ function calculateMedian(list) {
         // If length of list is even
         return (sorted[middleIndex - 1] + sorted[middleIndex]) / 2; //Find the mean of the two digits in the middle
     }
-    const median = sorted.splice(middleIndex, 1)[0]; //Take a piece of one digit from the middle index and give it a location
+
     return median;
 }
 
