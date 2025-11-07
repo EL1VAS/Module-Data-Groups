@@ -43,6 +43,11 @@ test("given an array with both positive and negative numbers, returns the larges
 // Given an array with just negative numbers
 // When passed to the max function
 // Then it should return the closest one to zero
+test("given an array with just negative numbers, returns the closest one to zero", () => {
+    const elements = [-5, -1, -10, -81];
+    const currentOutput = findMax(elements);
+    expect(currentOutput).toEqual(-1);
+});
 
 // Given an array with decimal numbers
 // When passed to the max function
