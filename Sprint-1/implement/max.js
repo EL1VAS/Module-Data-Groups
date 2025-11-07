@@ -3,7 +3,7 @@ function findMax(elements) {
         //If array is empty
         return -Infinity;
     }
-    return Math.max(elements); //Mathematical max of the elements value
+    return Math.max(...elements); //Mathematical max of the elements spread
 }
 
 module.exports = findMax;
