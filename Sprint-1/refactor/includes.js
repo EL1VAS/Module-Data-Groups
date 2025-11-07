@@ -5,9 +5,10 @@ function includes(list, target) {
         const element = list[index];
         if (element !== target) {
             return false;
+        } else if (element === target) {
+            return true;
         }
     }
-    return true;
 }
 
 module.exports = includes;
