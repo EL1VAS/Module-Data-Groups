@@ -1,9 +1,15 @@
 function findMax(elements) {
-    if (elements.length === 0) {
+    const numbers = [];
+    for (let i = 0; i < elements.length; i++)
+        if (typeof elements[i] === "number") {
+            numbers.push(elements[i]);
+        }
+
+    if (numbers.length === 0) {
         //If array is empty
         return -Infinity;
     }
-    return Math.max(...elements); //Mathematical max of the elements spread
+    return Math.max(...numbers); //Mathematical max of the numbers spread
 }
 
 module.exports = findMax;
