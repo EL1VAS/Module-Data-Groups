@@ -5,7 +5,7 @@ function sum(elements) {
     const numbers = [];
     for (let i = 0; i < elements.length; i++) {
         if (typeof elements[i] === "number") {
-            numbers.push(element[i]);
+            numbers.push(elements[i]);
         }
     }
     let total = 0;
