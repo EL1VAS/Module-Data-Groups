@@ -2,9 +2,15 @@ function sum(elements) {
     if (elements.length === 0) {
         return 0;
     }
-    let total = 0;
+    const numbers = [];
     for (let i = 0; i < elements.length; i++) {
-        total += elements[i];
+        if (typeof elements[i] === "number") {
+            numbers.push(element[i]);
+        }
+    }
+    let total = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        total += numbers[i];
     }
     return total;
 }
