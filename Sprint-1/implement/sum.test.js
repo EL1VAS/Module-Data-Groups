@@ -50,7 +50,7 @@ test("given an array that contains decimal/float numbers, returns the correct to
 // When passed to the sum function
 // Then it should ignore the non-numerical values and return the sum of the numerical elements
 test("given an array that contains non-numerical values, ignores the non-numerical and returns the correct total numerical sum", () => {
-    const elements = [6.5, "e", "t" - 7.98];
+    const elements = [6.5, "e", "t", -7.98];
     const currentOutput = sum(elements);
     expect(currentOutput).toBeCloseTo(-1.48, 2); //Gives the closer result with 2 decimals
 });
