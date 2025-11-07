@@ -31,6 +31,11 @@ test("given an array with only one number, returns that number", () => {
 // Given an array containing negative numbers
 // When passed to the sum function
 // Then it should still return the correct total sum
+test("given an array that contains negative numbers, returns the correct total sum", () => {
+    const elements = [6, -8, 10, -7];
+    const currentOutput = sum(elements);
+    expect(currentOutput).toEqual(1);
+});
 
 // Given an array with decimal/float numbers
 // When passed to the sum function
