@@ -40,6 +40,11 @@ test("given an array that contains negative numbers, returns the correct total s
 // Given an array with decimal/float numbers
 // When passed to the sum function
 // Then it should return the correct total sum
+test("given an array that contains decimal/float numbers, returns the correct total sum", () => {
+    const elements = [6.5, -8.2, 10.01, -7.98];
+    const currentOutput = sum(elements);
+    expect(currentOutput).toEqual(0.33);
+});
 
 // Given an array containing non-number values
 // When passed to the sum function
