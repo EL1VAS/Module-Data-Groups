@@ -58,3 +58,8 @@ test("given an array that contains non-numerical values, ignores the non-numeric
 // Given an array with only non-number values
 // When passed to the sum function
 // Then it should return the least surprising value given how it behaves for all other inputs
+test("given an array that contains only non-numerical values, returns zero", () => {
+    const elements = ["a", "e", "t", "&"];
+    const currentOutput = sum(elements);
+    expect(currentOutput).toEqual(0);
+});
