@@ -53,7 +53,7 @@ test("given an array with just negative numbers, returns the closest one to zero
 // When passed to the max function
 // Then it should return the largest decimal number
 test("given an array with decimal numbers, returns the largest decimal number", () => {
-    const elements = [5.3, 1.5, -10.01, 81.4];
+    const elements = [5.3, 1.5, -10.01, 81.4]; //tried with negative decimals too
     const currentOutput = findMax(elements);
     expect(currentOutput).toEqual(81.4);
 });
