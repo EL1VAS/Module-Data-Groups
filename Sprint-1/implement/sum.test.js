@@ -41,7 +41,7 @@ test("given an array that contains negative numbers, returns the correct total s
 // When passed to the sum function
 // Then it should return the correct total sum
 test("given an array that contains decimal/float numbers, returns the correct total sum", () => {
-    const elements = [6.5, -8.2, 10.01, -7.98];
+    const elements = [6.5, -8.2, 10.01, -7.98]; //Added decimal numbers with more than one decimal too
     const currentOutput = sum(elements);
     expect(currentOutput).toBeCloseTo(0.33, 2); //Gives the closer result with 2 decimals
 });
@@ -50,7 +50,7 @@ test("given an array that contains decimal/float numbers, returns the correct to
 // When passed to the sum function
 // Then it should ignore the non-numerical values and return the sum of the numerical elements
 test("given an array that contains non-numerical values, ignores the non-numerical and returns the correct total numerical sum", () => {
-    const elements = [6.5, "e", "t", -7.98];
+    const elements = [6.5, "e", "t", -7.98]; //Kept some negative numbers too
     const currentOutput = sum(elements);
     expect(currentOutput).toBeCloseTo(-1.48, 2); //Gives the closer result with 2 decimals
 });
@@ -59,7 +59,7 @@ test("given an array that contains non-numerical values, ignores the non-numeric
 // When passed to the sum function
 // Then it should return the least surprising value given how it behaves for all other inputs
 test("given an array that contains only non-numerical values, returns zero", () => {
-    const elements = ["a", "e", "t", "&"];
+    const elements = ["a", "e", "t", "&"]; //Included symbols
     const currentOutput = sum(elements);
     expect(currentOutput).toEqual(0);
 });
