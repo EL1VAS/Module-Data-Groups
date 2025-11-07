@@ -43,7 +43,7 @@ test("given an array that contains negative numbers, returns the correct total s
 test("given an array that contains decimal/float numbers, returns the correct total sum", () => {
     const elements = [6.5, -8.2, 10.01, -7.98];
     const currentOutput = sum(elements);
-    expect(currentOutput).toEqual(0.33);
+    expect(currentOutput).toBe(0.33);
 });
 
 // Given an array containing non-number values
