@@ -18,7 +18,7 @@ const findMax = require("./max.js");
 // Delete this test.todo and replace it with a test.
 test("given an empty array, returns -Infinity", () => {
     const elements = [];
-    const currentOutput = max(elements);
+    const currentOutput = findMax(elements);
     expect(currentOutput).toEqual(-Infinity);
 });
 
