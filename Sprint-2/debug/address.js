@@ -4,12 +4,14 @@
 // but it isn't working...
 // Fix anything that isn't working
 
+//I think it will log housenumber: 42 instead of 42.
+
 const address = {
-  houseNumber: 42,
-  street: "Imaginary Road",
-  city: "Manchester",
-  country: "England",
-  postcode: "XYZ 123",
+    houseNumber: 42,
+    street: "Imaginary Road",
+    city: "Manchester",
+    country: "England",
+    postcode: "XYZ 123",
 };
 
 console.log(`My house number is ${address[0]}`);
