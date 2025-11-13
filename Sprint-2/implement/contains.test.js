@@ -48,3 +48,8 @@ test("when passed an object and property name, returns false if the object doesn
 // Given invalid parameters like an array
 // When passed to contains
 // Then it should return false or throw an error
+test("when given invalid parameters like an array, returns false", () => {
+    const currentOutput = contains([5, 9, 7], "g");
+    const targetOutput = false;
+    expect(currentOutput).toEqual(targetOutput);
+});
