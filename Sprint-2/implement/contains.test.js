@@ -39,6 +39,11 @@ test("when passed an object and a property name, returns true if the object cont
 // Given an object with properties
 // When passed to contains with a non-existent property name
 // Then it should return false
+test("when passed an object and property name, returns false if the object doesn't contain the property", () => {
+    const currentOutput = contains({ a: 5, b: 6 }, "c");
+    const targetOutput = false;
+    expect(currentOutput).toEqual(targetOutput);
+});
 
 // Given invalid parameters like an array
 // When passed to contains
