@@ -2,4 +2,4 @@ function parseQueryString() {
     return {};
 }
 
-Module.exports = parseQueryString;
+module.exports = parseQueryString;
