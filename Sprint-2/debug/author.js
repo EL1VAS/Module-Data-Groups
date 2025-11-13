@@ -7,13 +7,14 @@
 //I will write a function to extract all values
 
 function authorValues(author) {
-    return (
+    const value = [
         author.firstName,
         author.lastName,
         author.occupation,
         author.age,
-        author.alive
-    );
+        author.alive,
+    ];
+    return value;
 }
 
 const author = {
