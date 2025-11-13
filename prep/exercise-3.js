@@ -2,7 +2,12 @@
 //  The function has 1 parameter representing an ice cream object
 //  I can eat the ice cream if it is lactose-free and contains less than 10 grams of sugar
 
-function canEat(iceCream) {}
+function canEat(iceCream) {
+    if (iceCream.lactoseFree === true && iceCream.gramsOfSugarPerScoop < 10) {
+        return "Yes";
+    }
+    return "No";
+}
 
 const iceCream1 = {
     flavour: "Vanilla",
