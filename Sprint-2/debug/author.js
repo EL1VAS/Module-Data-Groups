@@ -6,6 +6,16 @@
 //The for of loop is used in arrays and functions not in objects.
 //I will write a function to extract all values
 
+function authorValues(author) {
+    return (
+        author.firstName,
+        author.lastName,
+        author.occupation,
+        author.age,
+        author.alive
+    );
+}
+
 const author = {
     firstName: "Zadie",
     lastName: "Smith",
@@ -14,6 +24,4 @@ const author = {
     alive: true,
 };
 
-for (const value of author) {
-    console.log(value);
-}
+console.log(value);
