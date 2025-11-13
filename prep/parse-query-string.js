@@ -3,7 +3,7 @@ function parseQueryString(queryString) {
     const keyValuePair = queryString.split("=");
     const key = keyValuePair[0];
     const value = keyValuePair[1];
-    queryParams.key = value;
+    queryParams[key] = value;
     return queryParams;
 }
 
