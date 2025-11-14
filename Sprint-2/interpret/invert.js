@@ -14,6 +14,7 @@ function invert(obj) {
     }
 
     return invertedObj;
+}
 
 module.exports = invert;
 
