@@ -28,7 +28,8 @@ module.exports = invert;
 // To return 1:a, 2:b
 
 // c) What does Object.entries return? Why is it needed in this program?
-//As I reseached it creates an array of pairs out of the keys and values of an object
+// As I reseached it creates an array of pairs out of the keys and values of an object
+// We need that because we can't loop through an object's items
 
 // d) Explain why the current return value is different from the target output
 // It doesn't invert it it just breaks it in pairs within an array and adds it to another object
