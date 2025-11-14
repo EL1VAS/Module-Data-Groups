@@ -38,5 +38,5 @@ test("tally on an array with duplicated items, returns counts for each unique it
 // When passed to tally
 // Then it should throw an error
 test("given an invalid input, tally is throwing an error", () => {
-    expect(tally("jgjjKG")).toThrow();
+    expect(() => tally("jgjjKG")).toThrow();
 });
