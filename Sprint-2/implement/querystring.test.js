@@ -10,3 +10,5 @@ test("parses querystring values containing =", () => {
         equation: "x=y+1",
     });
 });
+
+//Sorry couldn't think of another edge case only normal possibillities as per my prep
