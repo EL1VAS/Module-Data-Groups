@@ -24,4 +24,5 @@ test("when an object with a key and a symbol as value is passed to invert, retur
 
 test("when the input passed to invert is not an object, returns an error message", () => {
     expect(() => invert(["a", 1], ["b", 2])).toThrow();
-});
+}); // it didn't work originally as arrays are objects in Javascript
+// I had to add the array exemption too for the function to throw an error
