@@ -7,6 +7,10 @@
 // E.g. invert({x : 10, y : 20}), target output: {"10": "x", "20": "y"}
 
 function invert(obj) {
+    if (typeOff(obj) !== "object" || obj == null) {
+        throw new Error("Input must be an object");
+    }
+
     const invertedObj = {};
 
     for (const [key, value] of Object.entries(obj)) {
