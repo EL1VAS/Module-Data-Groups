@@ -19,5 +19,5 @@ test("when an object with a key and 0 as value is passed to invert, returns the 
 });
 
 test("when an object with a key and a symbol as value is passed to invert, returns the object with swapped key value", () => {
-    expect(invert({ a: "&" })).toEqual({ "&": "a" });
+    expect(invert({ a: "&" })).toEqual({ "&": "a" }); // I mportant here are the "" as Javascript doesn't read the symbols as a string otherwise
 });
