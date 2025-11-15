@@ -26,3 +26,7 @@ test("when the input passed to invert is not an object, returns an error message
     expect(() => invert(["a", 1], ["b", 2])).toThrow();
 }); // it didn't work originally as arrays are objects in Javascript
 // I had to add the array exemption too for the function to throw an error
+
+test("when the input passed to invert is null, returns an error message", () => {
+    expect(() => invert(null)).toThrow();
+});
