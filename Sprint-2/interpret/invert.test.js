@@ -11,5 +11,5 @@ test("when a one pair object is passed to invert, returns the object with swappe
 });
 
 test("when more than one pair object is paqssed to invert, returns the object with swapped keys values", () => {
-    expect(invert({ a: 1, b: 2 }).toEqual({ 1: "a", 2: "b" }));
+    expect(invert({ a: 1, b: 2 })).toEqual({ 1: "a", 2: "b" });
 });
