@@ -10,6 +10,10 @@ test("when a one pair object is passed to invert, returns the object with swappe
     //Writting 1:"a" means that since 1 in now the key is already turned to a string
 });
 
-test("when more than one pair object is paqssed to invert, returns the object with swapped keys values", () => {
+test("when more than one pair object is passed to invert, returns the object with swapped keys values", () => {
     expect(invert({ a: 1, b: 2 })).toEqual({ 1: "a", 2: "b" });
+});
+
+test("when an object with a key and symbol as value is passed to invert, returns the object with swapped key value", () => {
+    expect(invert({ a: 0 })).toEqual({ 0: "a" });
 });
