@@ -4,7 +4,7 @@
 // But it isn't working. Explain why first and then fix the problem
 
 //The for of loop is used in arrays and functions not in objects.
-//I will write a function to extract all values
+//I will write a function to extract all values to an array
 
 function authorValues(author) {
     const value = [
