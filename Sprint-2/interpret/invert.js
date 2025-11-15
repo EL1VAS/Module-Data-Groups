@@ -8,10 +8,10 @@
 
 function invert(obj) {
     if (typeof obj !== "object" || obj == null || Array.isArray(obj)) {
-        throw new Error("Input must be an object");
+        throw new Error("Input must be an object"); // Making sure that input is an object, excempting also arrays that are considered objects by Javascript
     }
 
-    const invertedObj = {};
+    const invertedObj = {}; // Create new empty object to add the inverted key value
 
     for (const [key, value] of Object.entries(obj)) {
         invertedObj[value] = key;
