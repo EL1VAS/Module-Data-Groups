@@ -25,3 +25,4 @@ const productivityBook = {
 
 // this should output 1984
 console.log(getCheapest(fictionBook, productivityBook));
+console.log(getCheapest(productivityBook, fictionBook)); //Same as above console.log as parameters compared are the same
