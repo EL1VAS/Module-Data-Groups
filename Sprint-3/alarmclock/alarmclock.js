@@ -23,6 +23,7 @@ function setAlarm() {
             // When countdown reaches 00:00
             clearInterval(intervalId); // Function will stop running
             playAlarm(); // Alarm will start playing on 00:00
+            document.body.style.backgroundColor = "orange";
         }
     }, 1000);
 }
