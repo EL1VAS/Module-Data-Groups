@@ -1,6 +1,12 @@
+function formatTime(totalSeconds) {
+    const minutes = Math.round(totalSeconds / 60);
+    const seconds = totalSeconds % 60;
+}
+
 function setAlarm() {
     const inputValue = document.getElementById("alarmSet").value;
-    console.log(inputValue);
+    const formatedInput = formatTime(inputValue);
+    console.log(formatedInput);
 }
 
 // DO NOT EDIT BELOW HERE
