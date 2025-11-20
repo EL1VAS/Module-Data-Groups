@@ -3,6 +3,8 @@ function formatTime(totalSeconds) {
     const seconds = totalSeconds % 60;
     const mm = String(minutes).padStart(2, "0"); //Added padding to cover the chance the input is a single number
     const ss = String(seconds).padStart(2, "0"); //Also I wanted to match the format of the Time remaining
+
+    return `${mm}:${ss}`;
 }
 
 function setAlarm() {
