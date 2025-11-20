@@ -48,6 +48,7 @@ function playAlarm() {
 
 function pauseAlarm() {
     audio.pause();
+    document.body.style.backgroundColor = "white"; // Sorry to alter the code, but I had to reset it when paused
 }
 
 window.onload = setup;
