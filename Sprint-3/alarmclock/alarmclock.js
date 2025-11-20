@@ -11,6 +11,8 @@ function setAlarm() {
     const inputValue = document.getElementById("alarmSet").value;
     const formatedInput = formatTime(inputValue);
     console.log(formatedInput);
+    const timeRemaining = document.getElementById("timeRemaining");
+    timeRemaining.innerText = `Time Remaining: ${formatedInput}`;
 }
 
 // DO NOT EDIT BELOW HERE
