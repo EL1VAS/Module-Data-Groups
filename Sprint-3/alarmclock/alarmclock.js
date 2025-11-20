@@ -22,6 +22,7 @@ function setAlarm() {
         if (remainingSeconds <= 0) {
             // When countdown reaches 00:00
             clearInterval(intervalId); // Function will stop running
+            playAlarm(); // Alarm will start playing on 00:00
         }
     }, 1000);
 }
