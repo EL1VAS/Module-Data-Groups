@@ -452,7 +452,7 @@ function setAutoStatus(on) {
     if (on) {
         status.textContent = "Auto-play: ON";
     } else {
-        status.textContent = "";
+        status.textContent = "Auto generate quotes";
     }
 }
 
