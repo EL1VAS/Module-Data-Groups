@@ -43,3 +43,14 @@ body {
     min-width: 400px;
     max-width: 90vw;
 }
+
+#new-quote {
+    background-color: brown;
+    color: burlywood;
+    font-family: serif;
+    font-size: 1.5em;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(60, 40, 20, 0.1);
+    margin-left: 300px;
+}
