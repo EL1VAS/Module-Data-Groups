@@ -70,3 +70,13 @@ body {
     left: 20px;
     cursor: pointer;
 }
+
+.auto-status {
+    font-size: 1.2em;
+    font-style: italic;
+    color: darkolivegreen;
+    margin: 0;
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+}
