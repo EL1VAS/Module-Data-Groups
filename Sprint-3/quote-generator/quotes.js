@@ -437,7 +437,7 @@ const quotes = [
 function showQuotes() {
     const randomQuote = pickFromArray(quotes);
     document.getElementById("quote").innerText = randomQuote.quote;
-    document.getElementById("author").innerText = randomQuote.author;
+    document.getElementById("author").innerText = "-" + randomQuote.author;
 }
 
 showQuotes();
