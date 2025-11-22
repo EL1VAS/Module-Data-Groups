@@ -449,7 +449,7 @@ let autoInterval = null;
 function setAutoStatus(on) {
     // Update the status text
     const status = document.getElementById("auto-status");
-    if (status === on) {
+    if (status.innerText === on) {
         return "Auto-play: ON";
     }
     return "";
