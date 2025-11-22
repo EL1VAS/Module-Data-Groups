@@ -1,7 +1,7 @@
 /** Write your CSS in here **/
 body {
     background-color: burlywood;
-    font-family: "Bad Script", cursive
+    font-family: "Bad Script";
     height: auto;
     margin: 0;
     display: flex;
@@ -10,7 +10,7 @@ body {
 }
 
 .bad-script-regular {
-    font-family: "Bad Sript", cursive;
+    font-family: "Bad Sript";
     font-weight: 400;
     font-style: italic;
 }
