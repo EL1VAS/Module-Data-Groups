@@ -11,7 +11,7 @@ body {
 
 .bad-script-regular {
     font-family: "Bad Script";
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 400;
     font-style: italic;
 }
@@ -21,4 +21,11 @@ body {
     font-size: 1em;
     font-weight: 400;
     font-style: italic;
+}
+
+.quote-icon {
+    font-size: 2.5em;
+    color: brown;
+    vertical-align: middle;
+    margin-right: 0.2em;
 }
