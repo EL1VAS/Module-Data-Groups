@@ -449,10 +449,11 @@ let autoInterval = null;
 function setAutoStatus(on) {
     // Update the status text
     const status = document.getElementById("auto-status");
-    if (status.textContent === on) {
-        return "Auto-play: ON";
+    if (on) {
+        status.textContent = "Auto-play: ON";
+    } else {
+        status.textContent = "";
     }
-    return "";
 }
 
 function handleAutoToggle() {
