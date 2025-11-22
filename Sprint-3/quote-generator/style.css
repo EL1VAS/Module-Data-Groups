@@ -8,6 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .bad-script-regular {
@@ -56,4 +57,16 @@ body {
     box-shadow: 0 6px 24px rgba(60, 40, 20, 0.1);
     margin-left: 300px;
     float: right;
+}
+
+.toggle-switch {
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    cursor: pointer;
 }
