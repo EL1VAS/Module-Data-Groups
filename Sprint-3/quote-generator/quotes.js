@@ -444,3 +444,31 @@ function showQuotes() {
 showQuotes();
 
 document.getElementById("new-quote").addEventListener("click", showQuotes);
+
+let autoInterval = null;
+function setAutoStatus(on) {
+    // Update the status text
+    const status = document.getElementById("auto-status");
+    if (status === on) {
+        return "Auto-play: ON";
+    }
+    return "";
+}
+
+function handleAutoToggle() {
+    const autoToggle = document.getElementById("auto-toggle");
+    if (autoToggle.checked) {
+        showQuotes(); // To show a quote directly when turned on
+        setAutoStatus(true);
+        autoInterval = setInterval(showQuotes, 5000);
+    } else {
+        clearInterval(autoInterval);
+        autoInterval = null;
+        setAutoStatus(false);
+    }
+}
+
+document
+    .getElementById("auto-toggle")
+    .addEventListener("change", handleAutoToggle);
+setAutoStatus(false);
