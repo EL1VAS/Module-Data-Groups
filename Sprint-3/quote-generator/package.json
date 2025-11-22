@@ -16,5 +16,8 @@
   "homepage": "https://github.com/CodeYourFuture/CYF-Coursework-Template#readme",
   "devDependencies": {
     "@testing-library/user-event": "^14.6.1"
+  },
+  "dependencies": {
+    "fresh": "^0.5.2"
   }
 }
