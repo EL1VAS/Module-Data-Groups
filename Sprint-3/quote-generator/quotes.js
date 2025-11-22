@@ -436,8 +436,7 @@ const quotes = [
 // call pickFromArray with the quotes array to check you get a random quote
 function showQuotes() {
     const randomQuote = pickFromArray(quotes);
-    document.getElementById("quote").innerHTML =
-        '<span class="quote-icon">&ldquo;</span>' + randomQuote.quote;
+    document.getElementById("quote").innerHTML = randomQuote.quote;
     document.getElementById("author").innerText = "-" + randomQuote.author;
 }
 
