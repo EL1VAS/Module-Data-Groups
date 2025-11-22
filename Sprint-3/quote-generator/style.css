@@ -28,14 +28,6 @@ body {
     margin-top: -10px;
 }
 
-.quote-icon {
-    font-size: 3em;
-    color: brown;
-    vertical-align: middle;
-    margin-right: 0.2em;
-    font-style: italic;
-}
-
 .container {
     background-color: burlywood;
     padding: 48px 32px 32px 32px;
