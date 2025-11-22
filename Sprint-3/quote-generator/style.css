@@ -1,7 +1,7 @@
 /** Write your CSS in here **/
 body {
     background-color: burlywood;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     height: auto;
     margin: 0;
     display: flex;
