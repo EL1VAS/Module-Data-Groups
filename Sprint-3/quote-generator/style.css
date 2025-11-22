@@ -14,3 +14,10 @@ body {
     font-weight: 400;
     font-style: italic;
 }
+
+.bad-script-small {
+    font-family: "Bad Script";
+    font-size: 1em;
+    font-weight: 400;
+    font-style: italic;
+}
