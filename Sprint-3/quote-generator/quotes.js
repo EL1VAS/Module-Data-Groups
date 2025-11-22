@@ -437,7 +437,7 @@ const quotes = [
 function showQuotes() {
     const randomQuote = pickFromArray(quotes);
     document.getElementById("quote").innerHTML =
-        "<span class="quote-icon">&ldquo;</span>" + randomQuote.quote;
+        '<span class="quote-icon">&ldquo;</span>' + randomQuote.quote;
     document.getElementById("author").innerText = "-" + randomQuote.author;
 }
 
