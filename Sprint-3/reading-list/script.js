@@ -37,12 +37,12 @@ function createBookBox(books) {
         textDiv.className = "book-text"; // Gave it a class for css styling
         const imgDiv = document.createElement("div"); // Created another div just for the image
         imgDiv.className = "book-image"; // Added class for css
-        const title = document.createElement("h1"); // Created element for our title
-        title.textContent = books.title; // Gave the element a text content of the title taken from our array of books
+        const title = document.createElement("h2"); // Created element for our title
+        title.textContent = book.title; // Gave the element a text content of the title taken from our array of books
         const author = document.createElement("p"); // Created element for author
-        author.textContent = books.author; // Gave the element text matching with the author from our book[i] in array
+        author.textContent = book.author; // Gave the element text matching with the author from our book[i] in array
         const bookImage = document.createElement("img"); // Created an img element for just our book cover photo
-        bookImage.src = books.bookCoverImage; // Matched it with our book[i] cover image
+        bookImage.src = book.bookCoverImage; // Matched it with our book[i] cover image
 
         textDiv.appendChild(title); // Inserted in our book-text container the title and
         textDiv.appendChild(author); // the author
