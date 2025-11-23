@@ -56,3 +56,5 @@ function createBookBox(books) {
         readingList.appendChild(li); // Added the li element into our readingList
     }
 }
+
+createBookBox(books);
