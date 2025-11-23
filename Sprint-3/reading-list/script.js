@@ -43,8 +43,7 @@ function createBookBox(books) {
         const bookImage = document.createElement("img"); // Created an img element for just our book cover photo
         bookImage.src = book.bookCoverImage; // Matched it with our book cover image
 
-        textDiv.appendChild(title); // Inserted in our book-text container the title and
-        textDiv.appendChild(author); // the author
+        textDiv.appendChild(titleAuthor); // Inserted in our book-text container the title and author
         imgDiv.appendChild(bookImage); // Inserted in our imgDiv container the image
 
         container.appendChild(textDiv); // Inserted the book-text container into our main container
