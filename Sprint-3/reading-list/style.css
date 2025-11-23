@@ -182,6 +182,11 @@ body {
     border-radius: 8px;
 }
 
+.by-text {
+    font-size: 0.9em;
+    font-style: italic;
+}
+
 @media screen and (min-width: 992px) {
     .navbar-brand > img {
         max-height: 80px;

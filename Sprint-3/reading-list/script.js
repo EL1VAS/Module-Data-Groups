@@ -40,7 +40,7 @@ function createBookBox(books) {
         const titleAuthor = document.createElement("h2"); // Created element for our title and author
         titleAuthor.innerHTML =
             book.title +
-            "<br><span class='by-text'> by" +
+            "<br><span class='by-text'> by " +
             book.author +
             "</span>"; // Gave the element a text content of the title & author added a change of line and "by" element in beetween.
         const bookImage = document.createElement("img"); // Created an img element for just our book cover photo
