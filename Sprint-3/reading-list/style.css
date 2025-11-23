@@ -120,12 +120,12 @@ body {
     margin-bottom: 0;
 }
 
-.red {
-    background-color: red;
-}
-
 .green {
     background-color: green;
+}
+
+.red {
+    background-color: red;
 }
 
 .addArticle {
@@ -169,7 +169,6 @@ body {
 #reading-list li {
     margin: 24px auto;
     border-radius: 16px;
-    box-shadow: #292b2c;
     overflow: hidden;
     max-width: 700px;
     width: 100%;
