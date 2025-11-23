@@ -37,10 +37,9 @@ function createBookBox(books) {
         textDiv.className = "book-text"; // Gave it a class for css styling
         const imgDiv = document.createElement("div"); // Created another div just for the image
         imgDiv.className = "book-image"; // Added class for css
-        const title = document.createElement("h2"); // Created element for our title
-        title.textContent = book.title; // Gave the element a text content of the title taken from our book
-        const author = document.createElement("p"); // Created element for author
-        author.textContent = book.author; // Gave the element text matching with the author from our book
+        const titleAuthor = document.createElement("h2"); // Created element for our title and author
+        titleAuthor.innerHTML =
+            book.title + "<span class='by-text'>by</span>" + book.author; // Gave the element a text content of the title & author added a by element in beetween.
         const bookImage = document.createElement("img"); // Created an img element for just our book cover photo
         bookImage.src = book.bookCoverImage; // Matched it with our book cover image
 
