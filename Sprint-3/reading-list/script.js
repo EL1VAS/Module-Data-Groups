@@ -28,8 +28,10 @@ function createBookBox(books) {
         const li = document.createElement("li"); // Creates an element li
         if (book.alreadyRead === true) {
             li.classList.add("green"); // Adding class to element li
+            li.style.backgroundColor("green");
         } else {
             li.classList.add("red");
+            li.style.backgroundColor("red");
         }
         const container = document.createElement("div"); // Created a div element for all info of our book
         container.className = "book-container"; // Adds div a class for css to use
