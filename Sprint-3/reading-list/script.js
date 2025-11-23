@@ -26,7 +26,7 @@ function createBookBox(books) {
     for (let i = 0; i < books.length; i++) {
         const book = books[i]; // Checks each book in the array
         const li = document.createElement("li"); // Creates an element li
-        if ((book.alreadyRead = true)) {
+        if (book.alreadyRead === true) {
             li.classList.add("green"); // Adding class to element li
         } else {
             li.classList.add("red");
@@ -38,11 +38,11 @@ function createBookBox(books) {
         const imgDiv = document.createElement("div"); // Created another div just for the image
         imgDiv.className = "book-image"; // Added class for css
         const title = document.createElement("h2"); // Created element for our title
-        title.textContent = book.title; // Gave the element a text content of the title taken from our array of books
+        title.textContent = book.title; // Gave the element a text content of the title taken from our book
         const author = document.createElement("p"); // Created element for author
-        author.textContent = book.author; // Gave the element text matching with the author from our book[i] in array
+        author.textContent = book.author; // Gave the element text matching with the author from our book
         const bookImage = document.createElement("img"); // Created an img element for just our book cover photo
-        bookImage.src = book.bookCoverImage; // Matched it with our book[i] cover image
+        bookImage.src = book.bookCoverImage; // Matched it with our book cover image
 
         textDiv.appendChild(title); // Inserted in our book-text container the title and
         textDiv.appendChild(author); // the author
