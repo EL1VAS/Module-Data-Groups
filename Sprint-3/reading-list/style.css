@@ -156,11 +156,13 @@ body {
     background: #87ca8a;
 }
 
-.book-conatiner {
+.book-container {
     display: flex;
-    align-items: center;
-    gap: 24px;
-    padding: 20px 24px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 480px;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 992px) {
