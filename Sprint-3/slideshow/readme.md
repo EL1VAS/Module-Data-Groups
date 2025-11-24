@@ -64,9 +64,9 @@ Make your buttons work to navigate forwards and backwards, manually.
 
 Add the following buttons:
 
-- auto-forward
-- stop
-- auto-backwards
+-   auto-forward
+-   stop
+-   auto-backwards
 
 These should allow automatic navigation through the images, say every 5 seconds.
 
@@ -74,8 +74,8 @@ These should allow automatic navigation through the images, say every 5 seconds.
 
 Congratulations, you've finished the basics!
 
-- Make sure you can access it and play with it on a smartphone!
-- Celebrate!
+-   Make sure you can access it and play with it on a smartphone!
+-   Celebrate!
 
 ## Further work
 
