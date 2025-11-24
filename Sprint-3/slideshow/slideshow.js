@@ -7,7 +7,8 @@ const images = [
 // Write your code here
 let currentIndex = 0;
 function moveFrontOnce(forward) {
-    if (forward) {
+    console.log("moveFrontOnce called, forward = ", forward);
+    if (forward === true) {
         currentIndex = (currentIndex + 1) % images.length; // If forward is true adds 1 to the index
         // and wraps with % images.length in case we are in the last index
     } else {
@@ -16,11 +17,14 @@ function moveFrontOnce(forward) {
     }
     const image = document.getElementById("carousel-img");
     image.src = images[currentIndex];
+    console.log("Image scr is set to:", image.scr);
 }
 
-document
-    .getElementById("forward-btn")
-    .addEventListener("click", () => moveFrontOnce(true));
-document
-    .getElementById("backward-btn")
-    .addEventListener("click", () => moveFrontOnce(false));
+document.addEventListener("DOMContentLoaded", () => {
+    document
+        .getElementById("forward-btn")
+        .addEventListener("click", () => moveFrontOnce(true));
+    document
+        .getElementById("backward-btn")
+        .addEventListener("click", () => moveFrontOnce(false));
+});
