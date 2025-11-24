@@ -1,4 +1,4 @@
-const images = [
+window.images = [
     "./assets/cute-cat-a.png",
     "./assets/cute-cat-b.jpg",
     "./assets/cute-cat-c.jpg",
@@ -7,6 +7,7 @@ const images = [
 // Write your code here
 let currentIndex = 0;
 function moveFrontOnce(forward) {
+    const images = window.images;
     console.log("moveFrontOnce called, forward = ", forward);
     if (forward === true) {
         currentIndex = (currentIndex + 1) % images.length; // If forward is true adds 1 to the index
@@ -16,8 +17,8 @@ function moveFrontOnce(forward) {
         //making sure it wraps back to last image in case we were at index[0]
     }
     const image = document.getElementById("carousel-img");
-    image.src = images[currentIndex];
-    console.log("Image scr is set to:", image.scr);
+    image.setAttribute("src", images[currentIndex]);
+    console.log("Image src is set to:", image.src);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
