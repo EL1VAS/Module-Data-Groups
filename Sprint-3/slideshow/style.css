@@ -6,3 +6,10 @@
     display: block; /* removes any inline whitespace below image */
     margin: 0 auto; /* center horizontally if needed */
 }
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
