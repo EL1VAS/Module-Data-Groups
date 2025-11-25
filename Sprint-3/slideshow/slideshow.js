@@ -8,7 +8,7 @@ window.images = [
 let currentIndex = 0;
 function moveFrontOnce(forward) {
     const images = window.images;
-    console.log("moveFrontOnce called, forward = ", forward);
+    console.log("moveFrontOnce called, forward = ", forward); // Trying to troubleshoot
     if (forward === true) {
         currentIndex = (currentIndex + 1) % images.length; // If forward is true adds 1 to the index
         // and wraps with % images.length in case we are in the last index
@@ -17,8 +17,8 @@ function moveFrontOnce(forward) {
         //making sure it wraps back to last image in case we were at index[0]
     }
     const image = document.getElementById("carousel-img");
-    image.setAttribute("src", images[currentIndex]);
-    console.log("Image src is set to:", image.src);
+    image.setAttribute("src", images[currentIndex]); // Changed the approach while trying to pass the tests
+    console.log("Image src is set to:", image.src); // Tests shows that my img src is undefined
 }
 
 document.addEventListener("DOMContentLoaded", () => {
