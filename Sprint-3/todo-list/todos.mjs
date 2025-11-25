@@ -27,3 +27,16 @@ export function toggleCompletedOnTask(todos, taskIndex) {
         todos[taskIndex].completed = !todos[taskIndex].completed;
     }
 }
+
+export function deleteCompleted(todos) {
+    const todosNotDone = []; // Empty array to put the not done tasks
+    for (let i = 0; i < todos.length; i++) {
+        // Looping in the array to find
+        if (todos[i].completed === false) {
+            // the tasks that are not yet done
+            todosNotDone.push(todos[i]); // and add them in out empty array
+        }
+    }
+    todos.length = 0; // Clears our original array of tasks
+    todos.push(...todosNotDone); // Push all the content of the not done array one by one to the previously cleared array
+}
