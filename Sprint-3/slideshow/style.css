@@ -1,1 +1,8 @@
 /** Write your CSS in here **/
+#carousel-img {
+    width: 745px;
+    height: 559px;
+    object-fit: cover; /* ensures the image covers the area without distortion */
+    display: block; /* removes any inline whitespace below image */
+    margin: 0 auto; /* center horizontally if needed */
+}
